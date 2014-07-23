@@ -1,0 +1,9 @@
+package com.lion123.kubeztest.items;
+
+public class Mouse extends ItemBase {
+	public Mouse()
+	{
+		super();
+		this.setUnlocalizedName("mouse");
+	}
+}

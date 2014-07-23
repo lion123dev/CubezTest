@@ -17,7 +17,7 @@ public class ConfigHandler {
 		if(config == null)
 		{
 			config = new Configuration(configFile);
-			config.load();
+			LoadConfig();
 		}
 	}
 	
@@ -30,7 +30,7 @@ public class ConfigHandler {
 		}
 	}
 	
-	public void LoadConfig()
+	private static void LoadConfig()
 	{
 		rndValue = config.getBoolean("randomValue", Configuration.CATEGORY_GENERAL, false, "This is a testing config value");
 		String s = config.getString("qwfwqf", Configuration.CATEGORY_GENERAL, "hello", "yo-yo");

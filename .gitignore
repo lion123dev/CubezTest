@@ -44,3 +44,6 @@ local.properties
 
 #forge logs
 eclipse/logs/*
+
+#ignore worlds
+/eclipse/saves/*

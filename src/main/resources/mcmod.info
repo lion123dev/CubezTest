@@ -1,0 +1,19 @@
+[
+{
+    "modid": "kubeztest",
+    "name": "Kubez Test",
+    "description": "Test mod made with Pahimar's tutorial on Let's Mod Reboot!",
+    "version": "0.1",
+    "mcversion": "1.7.10",
+    "url": "https://github.com/lion123dev/CubezTest",
+    "updateUrl": "",
+    "authorList": [ "lion123" ],
+    "credits": "Made by lion123",
+    "logoFile": "",
+    "screenshots": [],
+    "parent": "",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": []
+  }
+]

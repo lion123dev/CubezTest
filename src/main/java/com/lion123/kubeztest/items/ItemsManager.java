@@ -1,7 +1,9 @@
 package com.lion123.kubeztest.items;
 
-import cpw.mods.fml.common.registry.GameRegistry;
+import com.lion123.kubeztest.references.Reg;
 
+import cpw.mods.fml.common.registry.GameRegistry;
+@GameRegistry.ObjectHolder(Reg.MOD_ID)
 public class ItemsManager {
 	public static final ItemBase mouse = new Mouse();
 	

@@ -1,5 +1,6 @@
 package com.lion123.kubeztest.items;
 
+import com.lion123.kubeztest.creativetab.CreativeTabKubez;
 import com.lion123.kubeztest.references.Reg;
 
 import cpw.mods.fml.relauncher.Side;
@@ -13,6 +14,7 @@ public class ItemBase extends Item {
 	{
 		super();
 		this.setNoRepair();
+		this.setCreativeTab(CreativeTabKubez.KubexTab);
 	}
 	@Override
     public String getUnlocalizedName()

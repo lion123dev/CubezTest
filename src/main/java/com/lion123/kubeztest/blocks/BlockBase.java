@@ -1,5 +1,6 @@
 package com.lion123.kubeztest.blocks;
 
+import com.lion123.kubeztest.creativetab.CreativeTabKubez;
 import com.lion123.kubeztest.references.Reg;
 
 import cpw.mods.fml.relauncher.Side;
@@ -12,6 +13,7 @@ public class BlockBase extends Block {
 	public BlockBase(Material material)
 	{
 		super(material);
+		this.setCreativeTab(CreativeTabKubez.KubexTab);
 	}
 	
 	public BlockBase()

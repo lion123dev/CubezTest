@@ -1,11 +1,12 @@
 package com.lion123.kubeztest;
 import net.minecraftforge.common.config.Configuration;
 
-import com.lion123.kubeztest.Config.ConfigHandler;
+import com.lion123.kubeztest.config.ConfigHandler;
 import com.lion123.kubeztest.blocks.BlocksManager;
 import com.lion123.kubeztest.items.ItemsManager;
 import com.lion123.kubeztest.proxy.IProxy;
 import com.lion123.kubeztest.references.Reg;
+import com.lion123.kubeztest.utils.RecipesManager;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -25,14 +26,15 @@ public class KubezTest {
 	{
 		ConfigHandler.init(e.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
-		ItemsManager.Init();
-		BlocksManager.Init();
+		
+		ItemsManager.initItems();
+		BlocksManager.initBlocks();
 	}
 	
 	@Mod.EventHandler()
 	public void init(FMLInitializationEvent e)
 	{
-		
+		RecipesManager.initRecipes();
 	}
 	
 	@Mod.EventHandler()

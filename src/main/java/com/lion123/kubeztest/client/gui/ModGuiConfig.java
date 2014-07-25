@@ -4,7 +4,8 @@ import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
 import cpw.mods.fml.client.config.*;
 
-import com.lion123.kubeztest.Config.*;
+import com.lion123.kubeztest.config.ConfigHandler;
+import com.lion123.kubeztest.config.*;
 import com.lion123.kubeztest.references.Reg;
 public class ModGuiConfig extends GuiConfig{
 	public ModGuiConfig(GuiScreen screen)

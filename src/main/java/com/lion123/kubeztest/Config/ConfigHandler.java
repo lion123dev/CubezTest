@@ -1,4 +1,4 @@
-package com.lion123.kubeztest.Config;
+package com.lion123.kubeztest.config;
 
 import java.io.File;
 

@@ -7,7 +7,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ItemsManager {
 	public static final ItemBase mouse = new Mouse();
 	
-	public static void Init()
+	public static void initItems()
 	{
 		GameRegistry.registerItem(mouse, "mouse");
 	}

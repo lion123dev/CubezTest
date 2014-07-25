@@ -7,7 +7,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class BlocksManager {
 	public static final BlockBase marble = new Marble();
 	
-	public static void Init()
+	public static void initBlocks()
 	{
 		GameRegistry.registerBlock(marble, "marble");
 	}
